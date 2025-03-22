@@ -3,3 +3,6 @@ flask-cors
 requests
 gunicorn
 numpy
+google-api-python-client
+python-dotenv
+tensorflow
