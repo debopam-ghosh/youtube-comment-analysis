@@ -34,6 +34,7 @@ def index():
     if request.method == 'POST':
         video_url = request.form.get('video_url')
         video_id = video_url.split("v=")[1]
+        video_id = video_id.split("&")[0]
         data = get_video(video_id)
 
         summary = data['summary']
