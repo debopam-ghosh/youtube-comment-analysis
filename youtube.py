@@ -25,8 +25,6 @@ def get_comments(youtube, **kwargs):
     return comments
 
 def main(video_id, api_key):
-    # Disable OAuthlib's HTTPs verification when running locally.
-    os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
     youtube = googleapiclient.discovery.build(
         "youtube", "v3", developerKey=api_key)
