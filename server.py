@@ -1,4 +1,4 @@
-from flask import Flask, request, request, render_template
+from flask import Flask, request, render_template
 from predict import predict_sentiments
 from youtube import get_video_comments
 from flask_cors import CORS
