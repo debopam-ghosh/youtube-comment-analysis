@@ -1,2 +1,2 @@
 export TF_ENABLE_ONEDNN_OPTS=0
-gunicorn server:app
+gunicorn - w 5 -b 0.0.0.0 server:app
